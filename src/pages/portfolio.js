@@ -1,5 +1,5 @@
 import * as React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
@@ -36,7 +36,9 @@ const SecondPage = () => {
           return (
             <section className="list">
               <li key={edge.node.id}>
-                <h2>{edge.node.title}</h2>
+                <Link to={`/portfolio/${edge.node.slug}`}>
+                  <h2>{edge.node.title}</h2>
+                </Link>
                 <p>{edge.node.description.description}</p>
                 <div className="img-container">
                   <GatsbyImage

@@ -1,22 +1,21 @@
 import { graphql } from "gatsby"
+import React from "react"
 
-const Page = ({ data }) => {}
+const Page = ({ data }) => {
+  return <h2>{data.contentfulCuba.title}</h2>
+}
 
 export const query = graphql`
-  query {
-    allContentfulCuba {
-      edges {
-        node {
-          title
-          description {
-            description
-          }
-          siteimage {
-            gatsbyImage(width: 200)
-          }
-          slug
-        }
+  query ($slug: String!) {
+    contentfulCuba(slug: { eq: $slug }) {
+      title
+      description {
+        description
       }
+      siteimage {
+        gatsbyImage(width: 200)
+      }
+      slug
     }
   }
 `
