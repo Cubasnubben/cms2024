@@ -635,7 +635,7 @@ background-color: rgb(140, 30, 168);
 /* font-family: 'Honk', system-ui; */
 font-family: 'Rubik Glitch Pop', system-ui;
 color: #ffffff99;
-            text-shadow: 16px 22px 11px rgba(0, 0, 0, 0.719);
+text-shadow: 16px 22px 11px rgba(0, 0, 0, 0.719);
 
 font-size: 10em;
 }
@@ -646,6 +646,7 @@ font-size: 10em;
   gap: 10px;
   margin-top: 20px;
   background-color: rgba(0, 0, 0, 0.726);
+  box-shadow: 16px 22px 11px rgba(0, 0, 0, 0.719);
 }
 
 .info-title {
@@ -663,6 +664,108 @@ font-size: 10em;
   padding: 0 300px;
 
 }
+
+/*INFO-PORTFOLIO*/
+
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list {
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*Transform för effekt vid hover*/
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform .7s;
+}
+/* ta ner height från 100% till 0 för effekten av hover och transition height*/
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(67, 192, 140, 0.823));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height .7s;
+}
+
+.layer h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #c5bb84;
+    text-shadow: -1px -1px 3px #020202, 2px 2px 4px #1b1b1b;
+}
+
+.layer p {
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #c5bb84;
+    text-shadow: -1px -1px 3px #020202, 2px 2px 4px #1b1b1b;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #998930;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform:scale(1.7);
+}
+/* styr height för effekt*/
+.work:hover .layer {
+height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: 1px solid rgb(74, 196, 145);
+    padding: 14px 50px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #fff;
+    transition: background .7s;
+    border: 2px solid #c5bb84;
+}
+
+.btn:hover{
+background:rgb(53, 153, 111);
+}
+
 
 
 /* RESPONSIV*/

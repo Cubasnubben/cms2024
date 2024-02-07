@@ -2,6 +2,9 @@ import { graphql, Link, navigate } from "gatsby"
 import React, { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSearch, faBars } from "@fortawesome/free-solid-svg-icons"
+import Pic from "../assets/game.jpg"
+import Pic1 from "../assets/musicplayer.jpg"
+import Pic2 from "../assets/webshop.jpg"
 
 const Page = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -110,6 +113,49 @@ const Page = ({ data }) => {
         <p className="info-paragraph">
           {data.contentfulCuba.description.description}
         </p>
+      </div>
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="subtitle">Några Projekt</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src={Pic1} alt="wimg" />
+              <div class="layer">
+                <h3>Music Player</h3>
+                <p>En enkel Musikspelare</p>
+                <a
+                  href="https://github.com/Cubasnubben/IronMaidenTestSite/tree/master"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-music"></i>
+                </a>
+              </div>
+            </div>
+            <div class="work">
+              <img src={Pic2} alt="wimg" />
+              <div class="layer">
+                <h3>Portfolio</h3>
+                <p>En basic första portfolio.</p>
+                <a href="#">
+                  <i class="fa-solid fa-globe"></i>
+                </a>
+              </div>
+            </div>
+            <div class="work">
+              <img src={Pic} alt="wimg" />
+              <div class="layer">
+                <h3>Spel</h3>
+                <p>Mario Run... Akta dig för spöken...</p>
+                <a
+                  href="https://github.com/Cubasnubben/Mario-Run"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-gamepad"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )
