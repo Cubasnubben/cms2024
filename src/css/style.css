@@ -782,4 +782,9 @@ display: none;
       .info-paragraph {
     padding: 0 10px;
   }
+  .info-project h1 {
+    font-size: 32px;
+    font-family: 'Honk', system-ui;
+
+  }
 }
