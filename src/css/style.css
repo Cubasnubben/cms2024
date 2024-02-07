@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap');
 
 
 * {
@@ -237,14 +239,7 @@ ul {
 
     }
 
-video {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+
 
 .overlay {
       position: absolute;
@@ -374,11 +369,6 @@ li{
     box-shadow: rgba(0, 0, 0, 0.504) 0px 30px 60px -12px, rgba(0, 0, 0, 0.427) 0px 18px 36px -18px;
   }
 
-  .hero {
-    height: 100vh;
-    padding: 10px;
-    background-image: linear-gradient(to bottom, #046050, #066454, #086858, #0b6c5c, #0d7060, #1a7a6a, #258473, #2f8e7d, #42a090, #55b3a3, #67c6b6, #79d9ca)
-  }
 
   /*FOOTER*/
 
@@ -639,6 +629,42 @@ background-color: rgb(140, 30, 168);
 }
 
 
+/*INFO*/
+
+.info-project h1 {
+/* font-family: 'Honk', system-ui; */
+font-family: 'Rubik Glitch Pop', system-ui;
+color: #ffffff99;
+            text-shadow: 16px 22px 11px rgba(0, 0, 0, 0.719);
+
+font-size: 10em;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.726);
+}
+
+.info-title {
+  grid-column: span 2;
+  color: rgb(225, 223, 180);
+}
+
+.info-paragraph {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 300px;
+
+}
+
+
 /* RESPONSIV*/
 @media (max-width: 768px) {
   .nav-links {
@@ -752,4 +778,8 @@ display: none;
    .container {
         margin: 10px;
     }
+
+      .info-paragraph {
+    padding: 0 10px;
+  }
 }
