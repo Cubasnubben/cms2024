@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link, navigate } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons"
+import { faBurger, faSearch } from "@fortawesome/free-solid-svg-icons"
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import Logo from "../assets/CubenG.png"
 
@@ -96,7 +96,7 @@ const Navbar = () => {
         )}
       </div>
       <button type="button" className="navbtn" onClick={handleToggle}>
-        <FontAwesomeIcon icon={faBars} />
+        <FontAwesomeIcon icon={faBurger} />
       </button>
     </nav>
   )
