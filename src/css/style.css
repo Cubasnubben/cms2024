@@ -729,11 +729,11 @@ font-size: 10em;
 
 .layer a {
     margin-top: 20px;
-    color: #998930;
+    background: #9d9b76b4;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #ffffff;
+    color: rgb(255, 253, 220);
     width: 60px;
     height: 60px;
     border-radius: 50%;
