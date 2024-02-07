@@ -1,7 +1,7 @@
 import { graphql, Link, navigate } from "gatsby"
 import React, { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faSearch, faBars } from "@fortawesome/free-solid-svg-icons"
+import { faSearch, faBurger } from "@fortawesome/free-solid-svg-icons"
 import Pic from "../assets/game.jpg"
 import Pic1 from "../assets/musicplayer.jpg"
 import Pic2 from "../assets/webshop.jpg"
@@ -88,7 +88,7 @@ const Page = ({ data }) => {
 
           {searchResults.length > 0 && (
             <div className="search-results">
-              <p>Din Sökning</p>
+              {/* <p>Din Sökning</p> */}
               <ul>
                 {searchResults.map(result => (
                   <li key={result.title}>
@@ -100,7 +100,7 @@ const Page = ({ data }) => {
           )}
         </div>
         <button type="button" className="navbtn" onClick={handleToggle}>
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon={faBurger} />
         </button>
       </nav>
       <section className="info-section">

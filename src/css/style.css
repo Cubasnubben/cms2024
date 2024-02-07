@@ -888,6 +888,11 @@ display: none;
   .info-project h1 {
     font-size: 32px;
     font-family: 'Honk', system-ui;
-
   }
+  .work img {
+    width: 330px;
+  }
+
+
+
 }
